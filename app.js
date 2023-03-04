@@ -15,6 +15,7 @@ app.get("/hi", (req, res) => {
 
 app.post("/register", async (req, res) => {
     try {
+        res.send("got a post req")
         const body = req.body
         const exists = await User.findOne(body)
         if (exists){

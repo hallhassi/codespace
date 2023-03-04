@@ -4,7 +4,11 @@ const express = require('express')
 const app = express()
 
 app.get("/", (req, res) => {
-    res.send("<p>${req}</p><p>${res}</p>")
+    res.send("<p>/</p>")
+})
+
+app.get("/hi", (req, res) => {
+    res.send("<p>hi</p>")
 })
 
 
